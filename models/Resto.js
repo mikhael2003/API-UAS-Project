@@ -3,11 +3,11 @@ const mongoose = require('mongoose')
 
 const RestoSchema = mongoose.Schema({
     // Buat Schema data
-    makanan: {
+    nama: {
         type: String,
         required: true
     },
-    minuman: {
+    email: {
         type: String,
         required: true
     },
@@ -17,4 +17,4 @@ const RestoSchema = mongoose.Schema({
     }
 })
 
-module.exports = mongoose.model('Mahasiswa', RestoSchema)
+module.exports = mongoose.model('Resto', RestoSchema)

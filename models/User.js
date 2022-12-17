@@ -3,17 +3,17 @@ const mongoose = require('mongoose')
 
 const UserSchema = mongoose.Schema({
     // Schema data
-    makanan: {
+    nama: {
         type: String,
         required: true,
         max: 45
     },
-    minuman: {
+    email: {
         type: String,
         required: true,
         max: 45
     },
-    jumlah: {
+    password: {
         type: String,
         required: true,
         min: 6,
