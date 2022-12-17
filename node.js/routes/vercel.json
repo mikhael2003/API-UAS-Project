@@ -1,0 +1,11 @@
+{
+    "version": 2,
+    "nama": "public-api",
+    "build": [
+        { "src":"app.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+        {"src": "/(.*)", "dest": "/app.js"}
+    ]
+            
+}
