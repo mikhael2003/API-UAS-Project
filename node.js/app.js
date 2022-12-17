@@ -18,7 +18,7 @@ const restoRoutes = require('./routes/resto')
 const authroutes = require('./routes/auth')
 
 // (8) app.use (mendaftarkan middleware baru ke Express)
-app.use('/resto', mahasiswaRoutes)
+app.use('/resto', restoRoutes)
  app.use('/auth',authroutes)
 
 // (3) koneksi ke database mongodb
