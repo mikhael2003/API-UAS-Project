@@ -14,11 +14,11 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json());
 
 // (7) import routes
-const mahasiswaRoutes = require('./routes/mahasiswa')
+const restoRoutes = require('./routes/resto')
 const authroutes = require('./routes/auth')
 
 // (8) app.use (mendaftarkan middleware baru ke Express)
-app.use('/mahasiswa', mahasiswaRoutes)
+app.use('/resto', mahasiswaRoutes)
  app.use('/auth',authroutes)
 
 // (3) koneksi ke database mongodb
